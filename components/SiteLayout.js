@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import Clock from 'react-live-clock'
+// import Clock from 'react-live-clock'
 import moment from 'moment'
 
 export default function layout({ children }) {
@@ -21,8 +21,8 @@ export default function layout({ children }) {
 						<h1 className='text-3xl font-semibold uppercase tracking-wide'>Issues & Incident Logger </h1>
 					</div>
 					<div className=''>
-						<span>{moment().format('ll')}</span> {'  '}
-						<Clock format={'HH:mm:ss'} ticking={true} />
+						<span>{moment().format('lll')}</span> {'  '}
+						{/* <Clock format={'HH:mm:ss'} ticking={true} /> */}
 					</div>
 				</div>
 			</div>
