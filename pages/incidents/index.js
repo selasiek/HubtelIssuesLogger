@@ -57,7 +57,7 @@ function Incidents() {
 						<TBodyRow key={incident.id}>
 							<TData>{moment(incident.incidentTime).format('lll')}</TData>
 							<TData>{moment(incident.timeOfResolution).format('lll')}</TData>
-							<TData>{moment.duration(incident.duration).format('hh:mm')} hours</TData>
+							<TData>{incident.duration} hours</TData>
 							<TData>{incident.loggedBy}</TData>
 							<TData>{incident.createdAt}</TData>
 							<TData classes='flex space-x-3'>
